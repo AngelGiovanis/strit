@@ -1,6 +1,8 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { Button,View, Text, StyleSheet } from "react-native";
 import Header from "./components/bottom_nav.jsx"
+import { router } from "expo-router";
+
 
 
 
@@ -9,15 +11,19 @@ export default function MyComponent() {
     <View style={styles.container}>
       <Header/>
       <Text style={styles.text}>Hello, world my parties thiingy!</Text>
+      <Button
+      title="add party"
+        onPress={()=>{router.push("/add_party")}}
+      ></Button>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,               // fills the screen
-    justifyContent: "center", // center vertically
-    alignItems: "center",     // center horizontally
+    flex: 1,               
+    justifyContent: "center", 
+    alignItems: "center",     
     backgroundColor: "#fff",
   },
   text: {

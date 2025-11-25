@@ -31,7 +31,7 @@ export default function App(){
           <Text style={{color:colors.light,fontSize:26,fontWeight:"bold",fontFamily:"BebasNeue"}}>THIS IS A PLACEHOLDER TEXT</Text>
           <Button
           title="Go to Map"
-          onPress={()=> router.push("/map")}>
+          onPress={()=> router.replace("/map")}>
           </Button>
           <Text style={{color: colors.light,fontSize:16,fontWeight:"bold"}}>Swipe To Continue</Text>
         </View>

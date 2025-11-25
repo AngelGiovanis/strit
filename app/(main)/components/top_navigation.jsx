@@ -6,7 +6,8 @@ export default function Top_nav({ title }) {
   const router = useRouter();
 
   return (
-    <View style={styles.circle_profile}>
+    <View>
+      <View style={styles.circle_profile}></View>
       
       <View style={styles.popup_nav}>
         <View style={styles.line}></View>
